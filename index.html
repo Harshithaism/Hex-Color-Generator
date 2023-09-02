@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style media="screen"></style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    generate color:<input type="color"id="colorpanel">
+    <input type="button"id="btn"value="get color" onclick="mycolor()">
+    Result:<input type="text"id="box">
+  </div>  
+  <script type="text/javascript">
+    function mycolor(){
+         var color=document.getElementById('colorpanel').value;
+         document.body.style.backgroundColor=color;
+         document.getElementById('box').value=color;
+    }
+  </script>
+</body>
+</html>
